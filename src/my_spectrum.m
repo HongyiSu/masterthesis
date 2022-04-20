@@ -1,4 +1,4 @@
-function myspectrum(data_syn_d_f,data_obs_d_f, station, channel,fs_syn,fs_obs,j,k)
+function my_spectrum(data_syn_d_f,data_obs_d_f, station, chan,fs_syn,fs_obs,j,k)
      ns_syn = length(data_syn_d_f);
      f_syn = fs_syn*(0:ns_syn/2)/ns_syn;%sample individual frequency
      F_syn=fft(data_syn_d_f);%perform Fourier Transformation with fft
@@ -14,7 +14,7 @@ function myspectrum(data_syn_d_f,data_obs_d_f, station, channel,fs_syn,fs_obs,j,
         xticks([10^-2 10^-1 10^0 10^1 10^2]);
         xlabel(['Frequency[Hz]'],'FontSize', 16,'Fontweight','bold');
     elseif(j==1)
-        title([char(channel)],'FontSize', 20,'fontweight','bold');
+        title(chan,'FontSize', 20,'fontweight','bold');
         set(gca,'Xticklabel',[])
     else
         set(gca,'Xticklabel',[])
@@ -23,7 +23,7 @@ function myspectrum(data_syn_d_f,data_obs_d_f, station, channel,fs_syn,fs_obs,j,
     
     if(k==1)
         yticks([10^-4 10^-2 10^0 10^2 10^4]);
-        ylabel([char(station)],'FontSize', 16,'fontweight','bold')
+        ylabel(station,'FontSize', 16,'fontweight','bold')
     else
        yticks([]);
        set(gca,'YColor','none')
@@ -37,14 +37,14 @@ function myspectrum(data_syn_d_f,data_obs_d_f, station, channel,fs_syn,fs_obs,j,
         xticks([10^-2 10^-1 10^0 10^1 10^2]);
         xlabel('Frequency[Hz]','FontSize', 16,'Fontweight','bold');
     elseif(j==1)
-        title([char(channel)],'FontSize', 20,'fontweight','bold')
+        title(chan,'FontSize', 20,'fontweight','bold')
         set(gca,'Xticklabel',[])
     else
         set(gca,'Xticklabel',[])
     end
     if(k==1)
         yticks([10^-4 10^-2 10^0 10^2 10^4]);
-        ylabel([char(station)],'FontSize', 16,'fontweight','bold')
+        ylabel(station,'FontSize', 16,'fontweight','bold')
     else
         yticks([]);
         set(gca,'YColor','none')
