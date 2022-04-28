@@ -1,5 +1,4 @@
 %Hongyi Su, M.Sc. candidate at LMU @ TUM 
-%Supervisors: Taufiqurrahman taufiqurrahman, Alice-Agnes Gabriel
 
 clc;
 close all;
@@ -15,7 +14,6 @@ end
 filename = [pwd '/seis_name.txt'];
 fileID = fopen(filename);
 C = textscan(fileID,'%s %s','Delimiter',',');
-%212,211,216
 fclose(fileID);
 syn_list = C{2};
 obs_list = C{1};  

@@ -27,7 +27,7 @@ north.simulate(pre_filt=pre_filt,seedresp={'filename': parser, 'units': "DIS"})
 vertical.simulate(pre_filt=pre_filt,seedresp={'filename': parser, 'units': "DIS"})
 
 ### Filtering with a butterworth bandpass on a copy of the original 
-east_filt = east.copy()
+east_filt = east.copy()[Job] Python Dashboard Developer with Machine Learning Affinity
 north_filt = north.copy()
 vertical_filt = vertical.copy()
     # Nyquist frequency is 0.5 for sampling rate 1 Hz 

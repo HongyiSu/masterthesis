@@ -1,7 +1,4 @@
-function [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn, m, n)  
-     
-     
-     
+function [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn, m, n)       
      %detrending
      data_obs_d = detrend(data_obs);
      data_syn_d = detrend(data_syn);

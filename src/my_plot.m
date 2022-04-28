@@ -13,7 +13,7 @@ function my_plot(obs_t, data_obs_d_f, syn_t, data_syn_d_f,max_obs_t,max_syn_t, s
 
      box off;
      axis off ;
-     xlim([0,60]);
+     %xlim([0,60]);
 
     % text(-6,-1,['\bf' '\it' station '(' chan ')'],'FontSize', 18);
      
