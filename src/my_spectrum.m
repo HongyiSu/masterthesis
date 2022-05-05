@@ -7,34 +7,19 @@ function my_spectrum(data_syn_d_f,data_obs_d_f, station, chan,fs_syn,fs_obs,j,k)
      f_obs = fs_obs*(0:ns_obs/2)/ns_obs;
      F_obs=fft(data_obs_d_f);
      A_obs=abs(F_obs(1:ns_obs/2+1));
-     loglog(f_obs,A_obs, 'r');
-     ylim([10^-4 10^4]);
-    
-    if(j==5)
-        xticks([10^-2 10^-1 10^0 10^1 10^2]);
-        xlabel(['Frequency[Hz]'],'FontSize', 16,'Fontweight','bold');
-    elseif(j==1)
-        title(chan,'FontSize', 20,'fontweight','bold');
-        set(gca,'Xticklabel',[])
-    else
-        set(gca,'Xticklabel',[])
-    end
-   
-    
-    if(k==1)
-        yticks([10^-4 10^-2 10^0 10^2 10^4]);
-        ylabel(station,'FontSize', 16,'fontweight','bold')
-    else
-       yticks([]);
-       set(gca,'YColor','none')
-    end
+
+
+     loglog(f_obs,A_obs/10^8, 'r');
+    % ylim([10^-8 10^2]);
 
     hold on
 
     loglog(f_syn,A_syn, 'k');
-    ylim([10^-4 10^4])
-    if(j==5)
-        xticks([10^-2 10^-1 10^0 10^1 10^2]);
+    ylim([10^-8 10^2])
+    xlim([0 10^2])
+    
+    if(j==3)
+        xticks([10^-4 10^-2 10^-1 10^0 10^1]);
         xlabel('Frequency[Hz]','FontSize', 16,'Fontweight','bold');
     elseif(j==1)
         title(chan,'FontSize', 20,'fontweight','bold')
@@ -43,7 +28,7 @@ function my_spectrum(data_syn_d_f,data_obs_d_f, station, chan,fs_syn,fs_obs,j,k)
         set(gca,'Xticklabel',[])
     end
     if(k==1)
-        yticks([10^-4 10^-2 10^0 10^2 10^4]);
+        yticks([10^-8 10^-6 10^-4 10^-2 10^0 10^2 10^4 10^6 10^8]);
         ylabel(station,'FontSize', 16,'fontweight','bold')
     else
         yticks([]);

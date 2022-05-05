@@ -37,9 +37,9 @@ for(j=1:length(obs_list))
    channel = char(channel_3(k));
    [data_obs data_syn obs_t syn_t fs_obs fs_syn max_syn_t max_obs_t chan station] = fetch(j, obs_list, syn_list, channel);
 
-   m=0.1; %define low cut
-   n=0.5; %define high cut
-   [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn, m, n);
+   m=0.2; %define low cut
+   n=0.6; %define high cut
+   [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn, fs_syn,fs_obs, m, n);
    count=count+1;
    subplot(3,3,count)
    shift = 0; %shifted 3.885 second based on obre EW
@@ -47,7 +47,7 @@ for(j=1:length(obs_list))
    end
 end
 
-saveas(fig,[pwd '/figure/waveform/all_waveform'],'jpg')
+saveas(fig,[pwd '/figure/waveform/all_waveform_[0.01,12].jpg'])
 
 %%
 close all
@@ -73,9 +73,9 @@ for(j=1:length(obs_list))
    [data_obs data_syn obs_t syn_t fs_obs fs_syn max_syn_t max_obs_t chan station] = fetch(j, obs_list, syn_list, channel);
     
      %filtering
-     m=0.2;
-     n=0.5;
-     [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn, m, n);
+    % m=0.01;
+    % n=12;
+    % [data_obs_d_f,data_syn_d_f]=filter_mydata(data_obs, data_syn,fs_syn,fs_obs, m, n);
 
      count=count+1;
      subplot(3,3,count);
@@ -83,7 +83,7 @@ for(j=1:length(obs_list))
 
     end
 end
-saveas(fig1,[pwd '/figure/spectrum/all_spectrum'],'jpg')
+saveas(fig1,[pwd '/figure/spectrum/all_spectrum_10^10'],'jpg')
 
 
 
