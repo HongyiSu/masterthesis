@@ -1,0 +1,41 @@
+* **********************************
+* NETWORK   (KNETWK): GT
+* STATION    (KSTNM): LBTB
+* LOCATION   (KHOLE): 00
+* CHANNEL   (KCMPNM): BHZ
+* CREATED           : 2022-05-12T12:55:09
+* START             : 2011-06-14T11:16:00
+* END               : 
+* DESCRIPTION       : Lobatse, Botswana
+* LATITUDE          : -25.015124
+* LONGITUDE         : 25.596598
+* ELEVATION         : 1148.3
+* DEPTH             : 0.0
+* DIP               : 0.0
+* AZIMUTH           : 0.0
+* SAMPLE RATE       : 40.0
+* INPUT UNIT        : M
+* OUTPUT UNIT       : COUNTS
+* INSTTYPE          : KS54000-VEL=LBTB=AIM24S_KS54K=LBTB
+* INSTGAIN          : 3.035600e+04 (M/S)
+* COMMENT           : 
+* SENSITIVITY       : 7.957860e+09 (M/S)
+* A0                : 1.087090e+05
+* **********************************
+ZEROS	4
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+	+0.000000e+00	+0.000000e+00	
+POLES	6
+	-4.219100e-03	+0.000000e+00	
+	-8.313000e-03	+0.000000e+00	
+	-7.785000e-02	+0.000000e+00	
+	-2.230000e+01	-2.410000e+01	
+	-2.230000e+01	+2.410000e+01	
+	-1.008500e+02	+0.000000e+00	
+CONSTANT	8.650910e+14
+
+
+
+
