@@ -1,0 +1,16 @@
+clear all;
+close all;
+dd = importdata('aftershocks_YXZ.dat');
+X = dd(:,1);
+Y = dd(:,2);
+Z = dd(:,3);
+Z = -Z;
+fileID = fopen('aftershocks_XYZ_a.csv','w');
+%[Lat,Lon] = utm2deg(x,y,utmzone)
+for(i=1:length(X))
+    [lat(i) lon(i)] = utm2deg(X(i),Y(i),'34 K');
+    fprintf(fileID,'%10.6f\t%10.6f\t\n',lat(i),lon(i));
+end
+fclose(fileID);
+%%
+ddd = importdata('aftershocks_XYZ_a.dat');
