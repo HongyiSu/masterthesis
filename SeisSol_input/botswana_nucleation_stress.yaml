@@ -1,37 +1,49 @@
-!EvalModel
-parameters: [b_xx, b_yy, b_zz, b_xy, b_yz, b_xz, ShapeNucleation]
+!EvalModel #Provides values by evaluating another easi tree.
+parameters: [b_xx, b_yy, b_zz, b_xy, b_yz, b_xz, ShapeNucleation]  #claim parameters
 model: !Switch
-  [b_xx, b_yy, b_zz, b_xy, b_yz, b_xz]: !EvalModel
+  [b_xx, b_yy, b_zz, b_xy, b_yz, b_xz]: !EvalModel 
     parameters: [S, sig_zz]
     model: !FunctionMap
       map: 
-	    # (rho*-rho_wasser?)*9.8*z ´; Tiefe Bruch
+      # sig_zz vertical stress, 0.37 is fluid pressure ratio, 
+      # Lithostatic pressure increases with depth below Earth's surface.
         sig_zz: |
           return -2670.0*(1.0-0.37)*9.8*29000; 
-        #(2.0 damit hier Bruch als erstes passiert)
+      #S is constant in this case -0.75
+      #S is relative fault strength
+      #R is the relative prestress ratio
+      #R=1 / (1+S)
+      #To prescribe S, static and dynamic friction (mu_s and mu_d) as well as cohesion are required.
+      
         S: |
           R = 4.0;								
           return (1.0/R-1.0);
-    components: !AndersonianStress
+    components: !AndersonianStress    
+    #other method: !OptimalStress 
+    #This function allows computing the stress which would result in faulting in the rake direction on the optimally oriented plane defined by strike and dip angles
       constants:
-        mu_d:      0.1
-        mu_s:      0.6
-        #strike alpha means Shmax=alpha+30
-        SH_max:   132.0
-        cohesion:  0.0
-        #s2ratio<0.5 induces transpression, else transtension
-        s2ratio:   0.5
-        S_v: 1
-  [ShapeNucleation]: !FunctionMap
+        mu_d:      0.1 #dynamic friction coef. 0.6? -> normal faulting with dip 60, strike SH_max?
+        mu_s:      0.6 #static friction coef.
+        SH_max:   132.0 #The principal stress orientations are defined by SH_max (measured from North, positive eastwards), the direction of maximum horizontal compressive stress.
+        cohesion:  0.0 #friction cohesion set to small value to include linear depth dependent stress, not neglect normal surface stresses (obermaier, B.S. Thesis)
+        s2ratio:   0.5    #s2ratio=0.5, means pure extension; <0.5 means transpression; > 0.5 means transtension,  Ulrich et al. (2019)
+        S_v: 1 #<int (1,2,3)> bc normal faulting, vertical pricipal stress is sig_1 according to Anderson theory of faulting
+        # maximum, intermediate or minimum compressive stress <=> 1,2,3
+
+        #S_v =1, assume mu_d =0.6, -> normal faulting on a 60° dipping fault plane striking SH_max
+
+        #S : <double>   dont need to reclaim here, as it already claimed before
+        #sig_zz : <double>   dont need to reclaim here, as it already claimed before
+  [ShapeNucleation]: !FunctionMap 
             map:
-              #xc = 933199;
-              # yc = 7492140;
-              #zc = -29000;
-		      #Maximale Radius der Nukleation, vielleicht größer machen damit mehr Bumms ist am Anfang
-              #removed: 9.4e5 7.49e6
+		          #Maximale Radius der Nukleation, vielleicht größer machen damit mehr Bumms ist am Anfang
+              #Maximum radius of nucleation, maybe make it bigger so that there is more bang at the beginning
+              #r_crit is the radius, which is 1000m
+              #(xc, yc, zc) is the hypercenter of the nucleation
+              #in the nucleation circle: ShapeNucleation = e^(r^2) / (r^2-1000^2)
               ShapeNucleation: |
-                xc = -6764.741143;
-                yc= 2113.182742;
+                xc = -6764.741143; 
+                yc= 2113.182742;   
                 zc=-28966.653212;		
                 r_crit = 1000.0;
                 r = sqrt(pow(x-xc, 2.0) + pow(y-yc, 2.0) + pow(z-zc, 2.0));

@@ -1,12 +1,17 @@
-!Switch
+!Switch      #Filters: Can be used to use select a component based on the requested parameters.
 [rs_a]: !ConstantMap
-  map:
-    rs_a: 0.01
+  map:       #A map allows to map vectors from R^m to R^n, eg. map rs_a to 0.01, rs_a = 0.01
+    rs_a: 0.01  #
 [RS_sl0]: !ConstantMap
   map:
     RS_sl0: 0.1
 [rs_srW]: !ConstantMap
   map:
     rs_srW: 0.1	 
-[s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]: !Include botswana_initial_stress.yaml
+
+#  botswana_initial_stress.yaml should return values for [s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]
+#  [s_xx, s_yy, s_zz, s_xy, s_yz, s_xz] are the 6 stress moment tensor
+#  botswana_nucleation_stress.yaml should return values for [nuc_xx,nuc_yy,nuc_zz,nuc_xy, nuc_yz,nuc_xz]
+#  [nuc_xx,nuc_yy,nuc_zz,nuc_xy, nuc_yz,nuc_xz] are the 6 nucleation stress moment tensor
+[s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]: !Include botswana_initial_stress.yaml 
 [nuc_xx,nuc_yy,nuc_zz,nuc_xy, nuc_yz,nuc_xz]: !Include botswana_nucleation_stress.yaml
