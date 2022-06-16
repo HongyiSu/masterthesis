@@ -11,6 +11,7 @@ model: !Switch
   #if -33000<=z  => Omega = 1; 
   #if -37000<=z<-33000  => Omega = 1-S_x, where S_x = 3*a^2 -2*a^3, a = 1 - (z+37000)/4000;
   #if z<-37000 => Omega =0.001
+  #transition
     map:
       Omega: |
        zStressDecreaseStart = -33000.;	  

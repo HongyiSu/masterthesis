@@ -25,7 +25,8 @@ model: !Switch
         mu_d:      0.1 #dynamic friction coef. 0.6? -> normal faulting with dip 60, strike SH_max?
         mu_s:      0.6 #static friction coef.
         SH_max:   132.0 #The principal stress orientations are defined by SH_max (measured from North, positive eastwards), the direction of maximum horizontal compressive stress.
-        cohesion:  0.0 #friction cohesion set to small value to include linear depth dependent stress, not neglect normal surface stresses (obermaier, B.S. Thesis)
+        cohesion:  0.0 #rock strength
+         #friction cohesion set to small value to include linear depth dependent stress, not neglect normal surface stresses (obermaier, B.S. Thesis)
         s2ratio:   0.5    #s2ratio=0.5, means pure extension; <0.5 means transpression; > 0.5 means transtension,  Ulrich et al. (2019)
         S_v: 1 #<int (1,2,3)> bc normal faulting, vertical pricipal stress is sig_1 according to Anderson theory of faulting
         # maximum, intermediate or minimum compressive stress <=> 1,2,3

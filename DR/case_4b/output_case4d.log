@@ -1,0 +1,472 @@
+Sun May 29 05:51:27, Info:  Welcome to SeisSol 
+Sun May 29 05:51:27, Info:  Copyright (c) 2012-2021, SeisSol Group 
+Sun May 29 05:51:27, Info:  Built on: Mar 23 2022 00:05:02 
+Sun May 29 05:51:27, Info:  Version: 202103_Sumatra-381-g3cff60a7 
+Sun May 29 05:51:27, Info:  Running on: heisenbug 
+Sun May 29 05:51:27, Info:  Using OMP with #threads/rank: 16 
+Sun May 29 05:51:27, Info:  OpenMP worker affinity (this process): "01234567--|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|--------89|012345----|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|------" 
+Sun May 29 05:51:27, Info:  OpenMP worker affinity (this node)   : "0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|0123456789|012345" 
+Sun May 29 05:51:27, Info:  Using MPI with #ranks: 16 
+Sun May 29 05:51:27, Info:  The stack size ulimit is unlimited. 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <                SeisSol MPI initialization               >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    |  Double precision used for real.
+Rank:        0 | Info    | <--------------------------------------------------------->
+ INFORMATION: The assumed unit number is           6 for stdout and           0 
+ for stderr.
+              If no information follows, please change the value.
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start ini_SeisSol ...                               >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <  Parameters read from file: parameters_4d.par              >
+Rank:        0 | Info    | <                                                         >
+Rank:        0 | Info    | No plasticity assumed. 
+Rank:        0 | Info    | No attenuation assumed. 
+Rank:        0 | Info    | No adjoint wavefield generated. 
+Rank:        0 | Info    | Isotropic material is assumed. 
+Rank:        0 | Info    | GPwise initialization. 
+Rank:        0 | Info    | Number of pickPoints =            2
+Rank:        0 | Info    |  Pickpoints read from recevier_35K_center.dat
+Rank:        0 | Info    | Read a PUML mesh file
+Rank:        0 | Warning | Ignoring min space order from parameter file, using           4
+Rank:        0 | Info    | Volume output is in XDMF format (new implementation)
+Rank:        0 | Info    | Output data are generated at delta T=   0.500000000000000     
+Rank:        0 | Info    | Number of Record Points =            2
+Rank:        0 | Info    | Record Points read from recevier_35K_center.dat
+Rank:        0 | Info    | Use HDF5 XdmfWriter backend
+Rank:        0 | Info    | Refinement strategy for volume output is Face Extraction :  4 subcells per cell
+Sun May 29 05:51:27, Info:  Running mini SeisSol to determine node weight 
+Sun May 29 05:51:27, Info:  Node weights: mean = 3.51599  std = 0.395054  min = 2.70026  median = 3.65112  max = 3.88961 
+Sun May 29 05:51:27, Info:  Reading PUML mesh ../mesh/mesh2 
+Sun May 29 05:51:27, Info:  Found 11416344 cells 
+Sun May 29 05:51:31, Info:  Found 1971613 vertices 
+Sun May 29 05:51:46, Info:  Computing LTS weights. 
+Sun May 29 05:52:05, Info:  Computing LTS weights. Done.  (203590 reductions.)
+      Setup: Max:   0.633, Sum:  10.120, Balance:   1.000
+   Matching: Max:   0.677, Sum:  10.838, Balance:   1.000
+Contraction: Max:   0.470, Sum:   7.526, Balance:   1.000
+   InitPart: Max:   0.013, Sum:   0.213, Balance:   1.000
+    Project: Max:   0.009, Sum:   0.098, Balance:   1.449
+ Initialize: Max:   0.076, Sum:   1.183, Balance:   1.024
+      K-way: Max:   0.259, Sum:   4.147, Balance:   1.000
+      Remap: Max:   0.002, Sum:   0.032, Balance:   1.000
+      Total: Max:   2.137, Sum:  34.184, Balance:   1.000
+Sun May 29 05:52:19, Info:  Reading mesh. Done. 
+Sun May 29 05:52:19, Info:  Extracting fault information 
+Sun May 29 05:52:19, Info:  Mesh initialized in: 52.1004 (min: 51.9978, max: 52.1661)
+Sun May 29 05:52:24, Info:  Deriving clusters ids for min. time step width / multiRate: 0.000200645 / 2 
+Sun May 29 05:52:25, Info:  Number of elements in time clusters: 
+Sun May 29 05:52:25, Info:  0: 3072 
+Sun May 29 05:52:25, Info:  1: 1966652 
+Sun May 29 05:52:25, Info:  2: 6612659 
+Sun May 29 05:52:25, Info:  3: 1911960 
+Sun May 29 05:52:25, Info:  4: 591725 
+Sun May 29 05:52:25, Info:  5: 213117 
+Sun May 29 05:52:25, Info:  6: 78068 
+Sun May 29 05:52:25, Info:  7: 31429 
+Sun May 29 05:52:25, Info:  8: 7658 
+Sun May 29 05:52:25, Info:  9: 4 
+Sun May 29 05:52:25, Info:  maximum theoretical speedup (compared to GTS): 5.65474 per cell LTS, 3.90476 with the used clustering. 
+Sun May 29 05:52:25, Info:  Number of elements in dynamic rupture time clusters: 
+Sun May 29 05:52:25, Info:  0 (dr): 329 
+Sun May 29 05:52:25, Info:  1 (dr): 233913 
+Sun May 29 05:52:25, Info:  2 (dr): 302678 
+Sun May 29 05:52:25, Info:  3 (dr): 0 
+Sun May 29 05:52:25, Info:  4 (dr): 0 
+Sun May 29 05:52:25, Info:  5 (dr): 0 
+Sun May 29 05:52:25, Info:  6 (dr): 0 
+Sun May 29 05:52:25, Info:  7 (dr): 0 
+Sun May 29 05:52:25, Info:  8 (dr): 0 
+Sun May 29 05:52:25, Info:  9 (dr): 0 
+Rank:        0 | Info    | Synchronizing copy cell material data.
+Rank:        0 | Info    | Initializing element local matrices.
+Rank:        0 | Info    | DG initial condition projection... 
+Sun May 29 05:52:30, Info:  Using initial condition  "Zero" . 
+Rank:        0 | Info    | DG initial condition projection done. 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start inioutput_SeisSol ...                         >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Sun May 29 05:52:30, Info:  Initializing free surface integrator. 
+Sun May 29 05:52:30, Info:  Initializing free surface integrator. Done. 
+Sun May 29 05:52:30, Info:  Initializing XDMF wave field output. 
+Sun May 29 05:52:30, Info:  Refinement Strategy is "Divide by 4" 
+Sun May 29 05:52:30, Info:  Refinement class initialized 
+Sun May 29 05:52:30, Info:  VariableSubsampler initialized 
+Sun May 29 05:52:51, Info:  High order output initialized 
+Sun May 29 05:52:51, Info:  Initializing XDMF wave field output. Done. 
+Sun May 29 05:52:51, Info:  Initializing free surface output. 
+Sun May 29 05:52:51, Info:  Initializing free surface output. Done. 
+Sun May 29 05:52:51, Info:  Finding meshIds for receivers... 
+Sun May 29 05:52:52, Info:  Cleaning possible double occurring receivers for MPI... 
+Sun May 29 05:52:52, Info:  Mapping receivers to LTS cells... 
+Sun May 29 05:52:52, Info:  Initializing XDMF fault output. 
+Sun May 29 05:52:53, Info:  Initializing XDMF fault output. Done. 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start calc_SeisSol ...                              >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Sun May 29 05:52:53, Info:  Waiting for last wave field. 
+Sun May 29 05:52:53, Info:  Writing wave field at time 0.
+Sun May 29 05:53:20, Info:  Writing wave field at time 0. Done.
+Sun May 29 05:53:20, Info:  Writing free surface at time 0.
+Sun May 29 05:53:20, Info:  Writing free surface at time 0. Done.
+Sun May 29 05:53:21, Info:  Writing faultoutput at time 0.
+Sun May 29 05:53:30, Info:  Writing faultoutput at time 0. Done.
+Sun May 29 05:53:30, Info:  #max-updates since sync:  0  @  0 
+Sun May 29 06:07:11, Info:  Waiting for last wave field. 
+Sun May 29 06:07:11, Info:  Writing wave field at time 0.5.
+Sun May 29 06:07:39, Info:  Writing wave field at time 0.5. Done.
+Sun May 29 06:07:39, Info:  Writing free surface at time 0.5.
+Sun May 29 06:07:40, Info:  Writing free surface at time 0.5. Done.
+Sun May 29 06:07:40, Info:  Writing faultoutput at time 0.5.
+Sun May 29 06:07:49, Info:  Writing faultoutput at time 0.5. Done.
+Sun May 29 06:07:49, Info:  1.09124 TFLOPS (rank 0: 73.2257 GFLOPS, average over ranks: 68.2023 GFLOPS) 
+Sun May 29 06:21:27, Info:  Waiting for last wave field. 
+Sun May 29 06:21:27, Info:  Writing wave field at time 1.
+Sun May 29 06:21:55, Info:  Writing wave field at time 1. Done.
+Sun May 29 06:21:55, Info:  Writing free surface at time 1.
+Sun May 29 06:21:56, Info:  Writing free surface at time 1. Done.
+Sun May 29 06:21:57, Info:  Writing faultoutput at time 1.
+Sun May 29 06:22:05, Info:  Writing faultoutput at time 1. Done.
+Sun May 29 06:22:05, Info:  1.11595 TFLOPS (rank 0: 74.884 GFLOPS, average over ranks: 69.7469 GFLOPS) 
+Sun May 29 06:35:45, Info:  Waiting for last wave field. 
+Sun May 29 06:35:45, Info:  Writing wave field at time 1.5.
+Sun May 29 06:36:14, Info:  Writing wave field at time 1.5. Done.
+Sun May 29 06:36:14, Info:  Writing free surface at time 1.5.
+Sun May 29 06:36:14, Info:  Writing free surface at time 1.5. Done.
+Sun May 29 06:36:15, Info:  Writing faultoutput at time 1.5.
+Sun May 29 06:36:24, Info:  Writing faultoutput at time 1.5. Done.
+Sun May 29 06:36:24, Info:  1.1238 TFLOPS (rank 0: 75.4106 GFLOPS, average over ranks: 70.2373 GFLOPS) 
+Sun May 29 06:50:03, Info:  Waiting for last wave field. 
+Sun May 29 06:50:03, Info:  Writing wave field at time 2.
+Sun May 29 06:50:32, Info:  Writing wave field at time 2. Done.
+Sun May 29 06:50:32, Info:  Writing free surface at time 2.
+Sun May 29 06:50:32, Info:  Writing free surface at time 2. Done.
+Sun May 29 06:50:33, Info:  Writing faultoutput at time 2.
+Sun May 29 06:50:42, Info:  Writing faultoutput at time 2. Done.
+Sun May 29 06:50:42, Info:  1.12771 TFLOPS (rank 0: 75.673 GFLOPS, average over ranks: 70.4817 GFLOPS) 
+Sun May 29 07:04:21, Info:  Waiting for last wave field. 
+Sun May 29 07:04:21, Info:  Writing wave field at time 2.5.
+Sun May 29 07:04:50, Info:  Writing wave field at time 2.5. Done.
+Sun May 29 07:04:50, Info:  Writing free surface at time 2.5.
+Sun May 29 07:04:51, Info:  Writing free surface at time 2.5. Done.
+Sun May 29 07:04:51, Info:  Writing faultoutput at time 2.5.
+Sun May 29 07:05:00, Info:  Writing faultoutput at time 2.5. Done.
+Sun May 29 07:05:00, Info:  1.13007 TFLOPS (rank 0: 75.8316 GFLOPS, average over ranks: 70.6295 GFLOPS) 
+Sun May 29 07:18:40, Info:  Waiting for last wave field. 
+Sun May 29 07:18:40, Info:  Writing wave field at time 3.
+Sun May 29 07:19:09, Info:  Writing wave field at time 3. Done.
+Sun May 29 07:19:09, Info:  Writing free surface at time 3.
+Sun May 29 07:19:09, Info:  Writing free surface at time 3. Done.
+Sun May 29 07:19:10, Info:  Writing faultoutput at time 3.
+Sun May 29 07:19:19, Info:  Writing faultoutput at time 3. Done.
+Sun May 29 07:19:19, Info:  1.13154 TFLOPS (rank 0: 75.9304 GFLOPS, average over ranks: 70.7215 GFLOPS) 
+Sun May 29 07:32:58, Info:  Waiting for last wave field. 
+Sun May 29 07:32:58, Info:  Writing wave field at time 3.5.
+Sun May 29 07:33:27, Info:  Writing wave field at time 3.5. Done.
+Sun May 29 07:33:27, Info:  Writing free surface at time 3.5.
+Sun May 29 07:33:28, Info:  Writing free surface at time 3.5. Done.
+Sun May 29 07:33:28, Info:  Writing faultoutput at time 3.5.
+Sun May 29 07:33:37, Info:  Writing faultoutput at time 3.5. Done.
+Sun May 29 07:33:37, Info:  1.13273 TFLOPS (rank 0: 76.0104 GFLOPS, average over ranks: 70.7959 GFLOPS) 
+Sun May 29 07:47:16, Info:  Waiting for last wave field. 
+Sun May 29 07:47:16, Info:  Writing wave field at time 4.
+Sun May 29 07:47:45, Info:  Writing wave field at time 4. Done.
+Sun May 29 07:47:45, Info:  Writing free surface at time 4.
+Sun May 29 07:47:46, Info:  Writing free surface at time 4. Done.
+Sun May 29 07:47:46, Info:  Writing faultoutput at time 4.
+Sun May 29 07:47:55, Info:  Writing faultoutput at time 4. Done.
+Sun May 29 07:47:55, Info:  1.13356 TFLOPS (rank 0: 76.0654 GFLOPS, average over ranks: 70.8472 GFLOPS) 
+Sun May 29 08:01:32, Info:  Waiting for last wave field. 
+Sun May 29 08:01:32, Info:  Writing wave field at time 4.5.
+Sun May 29 08:01:59, Info:  Writing wave field at time 4.5. Done.
+Sun May 29 08:01:59, Info:  Writing free surface at time 4.5.
+Sun May 29 08:02:00, Info:  Writing free surface at time 4.5. Done.
+Sun May 29 08:02:01, Info:  Writing faultoutput at time 4.5.
+Sun May 29 08:02:09, Info:  Writing faultoutput at time 4.5. Done.
+Sun May 29 08:02:09, Info:  1.13481 TFLOPS (rank 0: 76.1494 GFLOPS, average over ranks: 70.9254 GFLOPS) 
+Sun May 29 08:15:48, Info:  Waiting for last wave field. 
+Sun May 29 08:15:48, Info:  Writing wave field at time 5.
+Sun May 29 08:16:17, Info:  Writing wave field at time 5. Done.
+Sun May 29 08:16:17, Info:  Writing free surface at time 5.
+Sun May 29 08:16:18, Info:  Writing free surface at time 5. Done.
+Sun May 29 08:16:18, Info:  Writing faultoutput at time 5.
+Sun May 29 08:16:27, Info:  Writing faultoutput at time 5. Done.
+Sun May 29 08:16:27, Info:  1.13538 TFLOPS (rank 0: 76.1881 GFLOPS, average over ranks: 70.9615 GFLOPS) 
+Sun May 29 08:30:03, Info:  Waiting for last wave field. 
+Sun May 29 08:30:03, Info:  Writing wave field at time 5.5.
+Sun May 29 08:30:31, Info:  Writing wave field at time 5.5. Done.
+Sun May 29 08:30:31, Info:  Writing free surface at time 5.5.
+Sun May 29 08:30:31, Info:  Writing free surface at time 5.5. Done.
+Sun May 29 08:30:32, Info:  Writing faultoutput at time 5.5.
+Sun May 29 08:30:41, Info:  Writing faultoutput at time 5.5. Done.
+Sun May 29 08:30:41, Info:  1.1363 TFLOPS (rank 0: 76.2497 GFLOPS, average over ranks: 71.0189 GFLOPS) 
+Sun May 29 08:44:18, Info:  Waiting for last wave field. 
+Sun May 29 08:44:18, Info:  Writing wave field at time 6.
+Sun May 29 08:44:46, Info:  Writing wave field at time 6. Done.
+Sun May 29 08:44:46, Info:  Writing free surface at time 6.
+Sun May 29 08:44:46, Info:  Writing free surface at time 6. Done.
+Sun May 29 08:44:47, Info:  Writing faultoutput at time 6.
+Sun May 29 08:44:56, Info:  Writing faultoutput at time 6. Done.
+Sun May 29 08:44:56, Info:  1.13691 TFLOPS (rank 0: 76.2906 GFLOPS, average over ranks: 71.0569 GFLOPS) 
+Sun May 29 08:58:35, Info:  Waiting for last wave field. 
+Sun May 29 08:58:35, Info:  Writing wave field at time 6.5.
+Sun May 29 08:59:04, Info:  Writing wave field at time 6.5. Done.
+Sun May 29 08:59:04, Info:  Writing free surface at time 6.5.
+Sun May 29 08:59:04, Info:  Writing free surface at time 6.5. Done.
+Sun May 29 08:59:05, Info:  Writing faultoutput at time 6.5.
+Sun May 29 08:59:14, Info:  Writing faultoutput at time 6.5. Done.
+Sun May 29 08:59:14, Info:  1.13715 TFLOPS (rank 0: 76.3068 GFLOPS, average over ranks: 71.0721 GFLOPS) 
+Sun May 29 09:12:53, Info:  Waiting for last wave field. 
+Sun May 29 09:12:53, Info:  Writing wave field at time 7.
+Sun May 29 09:13:21, Info:  Writing wave field at time 7. Done.
+Sun May 29 09:13:21, Info:  Writing free surface at time 7.
+Sun May 29 09:13:22, Info:  Writing free surface at time 7. Done.
+Sun May 29 09:13:23, Info:  Writing faultoutput at time 7.
+Sun May 29 09:13:31, Info:  Writing faultoutput at time 7. Done.
+Sun May 29 09:13:31, Info:  1.13739 TFLOPS (rank 0: 76.3225 GFLOPS, average over ranks: 71.0866 GFLOPS) 
+Sun May 29 09:27:09, Info:  Waiting for last wave field. 
+Sun May 29 09:27:09, Info:  Writing wave field at time 7.5.
+Sun May 29 09:27:38, Info:  Writing wave field at time 7.5. Done.
+Sun May 29 09:27:38, Info:  Writing free surface at time 7.5.
+Sun May 29 09:27:38, Info:  Writing free surface at time 7.5. Done.
+Sun May 29 09:27:39, Info:  Writing faultoutput at time 7.5.
+Sun May 29 09:27:48, Info:  Writing faultoutput at time 7.5. Done.
+Sun May 29 09:27:48, Info:  1.1377 TFLOPS (rank 0: 76.3436 GFLOPS, average over ranks: 71.1063 GFLOPS) 
+Sun May 29 09:41:25, Info:  Waiting for last wave field. 
+Sun May 29 09:41:25, Info:  Writing wave field at time 8.
+Sun May 29 09:41:55, Info:  Writing wave field at time 8. Done.
+Sun May 29 09:41:55, Info:  Writing free surface at time 8.
+Sun May 29 09:41:55, Info:  Writing free surface at time 8. Done.
+Sun May 29 09:41:56, Info:  Writing faultoutput at time 8.
+Sun May 29 09:42:04, Info:  Writing faultoutput at time 8. Done.
+Sun May 29 09:42:04, Info:  1.13793 TFLOPS (rank 0: 76.3592 GFLOPS, average over ranks: 71.1208 GFLOPS) 
+Sun May 29 09:55:39, Info:  Waiting for last wave field. 
+Sun May 29 09:55:39, Info:  Writing wave field at time 8.5.
+Sun May 29 09:56:07, Info:  Writing wave field at time 8.5. Done.
+Sun May 29 09:56:07, Info:  Writing free surface at time 8.5.
+Sun May 29 09:56:08, Info:  Writing free surface at time 8.5. Done.
+Sun May 29 09:56:08, Info:  Writing faultoutput at time 8.5.
+Sun May 29 09:56:17, Info:  Writing faultoutput at time 8.5. Done.
+Sun May 29 09:56:17, Info:  1.13848 TFLOPS (rank 0: 76.3957 GFLOPS, average over ranks: 71.1549 GFLOPS) 
+Sun May 29 10:09:53, Info:  Waiting for last wave field. 
+Sun May 29 10:09:53, Info:  Writing wave field at time 9.
+Sun May 29 10:10:21, Info:  Writing wave field at time 9. Done.
+Sun May 29 10:10:21, Info:  Writing free surface at time 9.
+Sun May 29 10:10:21, Info:  Writing free surface at time 9. Done.
+Sun May 29 10:10:22, Info:  Writing faultoutput at time 9.
+Sun May 29 10:10:31, Info:  Writing faultoutput at time 9. Done.
+Sun May 29 10:10:31, Info:  1.13889 TFLOPS (rank 0: 76.4232 GFLOPS, average over ranks: 71.1805 GFLOPS) 
+Sun May 29 10:24:06, Info:  Waiting for last wave field. 
+Sun May 29 10:24:06, Info:  Writing wave field at time 9.5.
+Sun May 29 10:24:34, Info:  Writing wave field at time 9.5. Done.
+Sun May 29 10:24:34, Info:  Writing free surface at time 9.5.
+Sun May 29 10:24:34, Info:  Writing free surface at time 9.5. Done.
+Sun May 29 10:24:35, Info:  Writing faultoutput at time 9.5.
+Sun May 29 10:24:44, Info:  Writing faultoutput at time 9.5. Done.
+Sun May 29 10:24:44, Info:  1.13928 TFLOPS (rank 0: 76.4497 GFLOPS, average over ranks: 71.2051 GFLOPS) 
+Sun May 29 10:38:19, Info:  Waiting for last wave field. 
+Sun May 29 10:38:19, Info:  Writing wave field at time 10.
+Sun May 29 10:38:47, Info:  Writing wave field at time 10. Done.
+Sun May 29 10:38:47, Info:  Writing free surface at time 10.
+Sun May 29 10:38:48, Info:  Writing free surface at time 10. Done.
+Sun May 29 10:38:48, Info:  Writing faultoutput at time 10.
+Sun May 29 10:38:57, Info:  Writing faultoutput at time 10. Done.
+Sun May 29 10:38:57, Info:  1.13963 TFLOPS (rank 0: 76.4729 GFLOPS, average over ranks: 71.2267 GFLOPS) 
+Sun May 29 10:52:34, Info:  Waiting for last wave field. 
+Sun May 29 10:52:34, Info:  Writing wave field at time 10.5.
+Sun May 29 10:53:01, Info:  Writing wave field at time 10.5. Done.
+Sun May 29 10:53:01, Info:  Writing free surface at time 10.5.
+Sun May 29 10:53:02, Info:  Writing free surface at time 10.5. Done.
+Sun May 29 10:53:02, Info:  Writing faultoutput at time 10.5.
+Sun May 29 10:53:11, Info:  Writing faultoutput at time 10.5. Done.
+Sun May 29 10:53:11, Info:  1.13989 TFLOPS (rank 0: 76.4903 GFLOPS, average over ranks: 71.2429 GFLOPS) 
+Sun May 29 11:06:47, Info:  Waiting for last wave field. 
+Sun May 29 11:06:47, Info:  Writing wave field at time 11.
+Sun May 29 11:07:15, Info:  Writing wave field at time 11. Done.
+Sun May 29 11:07:15, Info:  Writing free surface at time 11.
+Sun May 29 11:07:16, Info:  Writing free surface at time 11. Done.
+Sun May 29 11:07:16, Info:  Writing faultoutput at time 11.
+Sun May 29 11:07:25, Info:  Writing faultoutput at time 11. Done.
+Sun May 29 11:07:25, Info:  1.14012 TFLOPS (rank 0: 76.5061 GFLOPS, average over ranks: 71.2576 GFLOPS) 
+Sun May 29 11:21:03, Info:  Waiting for last wave field. 
+Sun May 29 11:21:03, Info:  Writing wave field at time 11.5.
+Sun May 29 11:21:32, Info:  Writing wave field at time 11.5. Done.
+Sun May 29 11:21:32, Info:  Writing free surface at time 11.5.
+Sun May 29 11:21:32, Info:  Writing free surface at time 11.5. Done.
+Sun May 29 11:21:33, Info:  Writing faultoutput at time 11.5.
+Sun May 29 11:21:41, Info:  Writing faultoutput at time 11.5. Done.
+Sun May 29 11:21:41, Info:  1.14021 TFLOPS (rank 0: 76.5121 GFLOPS, average over ranks: 71.2633 GFLOPS) 
+Sun May 29 11:35:17, Info:  Waiting for last wave field. 
+Sun May 29 11:35:17, Info:  Writing wave field at time 12.
+Sun May 29 11:35:45, Info:  Writing wave field at time 12. Done.
+Sun May 29 11:35:45, Info:  Writing free surface at time 12.
+Sun May 29 11:35:45, Info:  Writing free surface at time 12. Done.
+Sun May 29 11:35:46, Info:  Writing faultoutput at time 12.
+Sun May 29 11:35:55, Info:  Writing faultoutput at time 12. Done.
+Sun May 29 11:35:55, Info:  1.14045 TFLOPS (rank 0: 76.5284 GFLOPS, average over ranks: 71.2784 GFLOPS) 
+Sun May 29 11:49:31, Info:  Waiting for last wave field. 
+Sun May 29 11:49:31, Info:  Writing wave field at time 12.5.
+Sun May 29 11:49:59, Info:  Writing wave field at time 12.5. Done.
+Sun May 29 11:49:59, Info:  Writing free surface at time 12.5.
+Sun May 29 11:49:59, Info:  Writing free surface at time 12.5. Done.
+Sun May 29 11:50:00, Info:  Writing faultoutput at time 12.5.
+Sun May 29 11:50:08, Info:  Writing faultoutput at time 12.5. Done.
+Sun May 29 11:50:08, Info:  1.14067 TFLOPS (rank 0: 76.5431 GFLOPS, average over ranks: 71.2921 GFLOPS) 
+Sun May 29 12:03:43, Info:  Waiting for last wave field. 
+Sun May 29 12:03:43, Info:  Writing wave field at time 13.
+Sun May 29 12:04:12, Info:  Writing wave field at time 13. Done.
+Sun May 29 12:04:12, Info:  Writing free surface at time 13.
+Sun May 29 12:04:12, Info:  Writing free surface at time 13. Done.
+Sun May 29 12:04:13, Info:  Writing faultoutput at time 13.
+Sun May 29 12:04:22, Info:  Writing faultoutput at time 13. Done.
+Sun May 29 12:04:22, Info:  1.14089 TFLOPS (rank 0: 76.5573 GFLOPS, average over ranks: 71.3054 GFLOPS) 
+Sun May 29 12:17:58, Info:  Waiting for last wave field. 
+Sun May 29 12:17:58, Info:  Writing wave field at time 13.5.
+Sun May 29 12:18:26, Info:  Writing wave field at time 13.5. Done.
+Sun May 29 12:18:26, Info:  Writing free surface at time 13.5.
+Sun May 29 12:18:26, Info:  Writing free surface at time 13.5. Done.
+Sun May 29 12:18:27, Info:  Writing faultoutput at time 13.5.
+Sun May 29 12:18:36, Info:  Writing faultoutput at time 13.5. Done.
+Sun May 29 12:18:36, Info:  1.14103 TFLOPS (rank 0: 76.5673 GFLOPS, average over ranks: 71.3146 GFLOPS) 
+Sun May 29 12:32:11, Info:  Waiting for last wave field. 
+Sun May 29 12:32:11, Info:  Writing wave field at time 14.
+Sun May 29 12:32:39, Info:  Writing wave field at time 14. Done.
+Sun May 29 12:32:39, Info:  Writing free surface at time 14.
+Sun May 29 12:32:39, Info:  Writing free surface at time 14. Done.
+Sun May 29 12:32:40, Info:  Writing faultoutput at time 14.
+Sun May 29 12:32:49, Info:  Writing faultoutput at time 14. Done.
+Sun May 29 12:32:49, Info:  1.14125 TFLOPS (rank 0: 76.5817 GFLOPS, average over ranks: 71.3281 GFLOPS) 
+Sun May 29 12:46:25, Info:  Waiting for last wave field. 
+Sun May 29 12:46:25, Info:  Writing wave field at time 14.5.
+Sun May 29 12:46:52, Info:  Writing wave field at time 14.5. Done.
+Sun May 29 12:46:52, Info:  Writing free surface at time 14.5.
+Sun May 29 12:46:53, Info:  Writing free surface at time 14.5. Done.
+Sun May 29 12:46:53, Info:  Writing faultoutput at time 14.5.
+Sun May 29 12:47:02, Info:  Writing faultoutput at time 14.5. Done.
+Sun May 29 12:47:02, Info:  1.14141 TFLOPS (rank 0: 76.5922 GFLOPS, average over ranks: 71.3379 GFLOPS) 
+Sun May 29 13:00:38, Info:  Waiting for last wave field. 
+Sun May 29 13:00:38, Info:  Writing wave field at time 15.
+Sun May 29 13:01:05, Info:  Writing wave field at time 15. Done.
+Sun May 29 13:01:05, Info:  Writing free surface at time 15.
+Sun May 29 13:01:06, Info:  Writing free surface at time 15. Done.
+Sun May 29 13:01:07, Info:  Writing faultoutput at time 15.
+Sun May 29 13:01:15, Info:  Writing faultoutput at time 15. Done.
+Sun May 29 13:01:15, Info:  1.14157 TFLOPS (rank 0: 76.6035 GFLOPS, average over ranks: 71.3483 GFLOPS) 
+Sun May 29 13:14:51, Info:  Waiting for last wave field. 
+Sun May 29 13:14:51, Info:  Writing wave field at time 15.5.
+Sun May 29 13:15:19, Info:  Writing wave field at time 15.5. Done.
+Sun May 29 13:15:19, Info:  Writing free surface at time 15.5.
+Sun May 29 13:15:19, Info:  Writing free surface at time 15.5. Done.
+Sun May 29 13:15:20, Info:  Writing faultoutput at time 15.5.
+Sun May 29 13:15:29, Info:  Writing faultoutput at time 15.5. Done.
+Sun May 29 13:15:29, Info:  1.14171 TFLOPS (rank 0: 76.6128 GFLOPS, average over ranks: 71.3571 GFLOPS) 
+Sun May 29 13:29:05, Info:  Waiting for last wave field. 
+Sun May 29 13:29:05, Info:  Writing wave field at time 16.
+Sun May 29 13:29:33, Info:  Writing wave field at time 16. Done.
+Sun May 29 13:29:33, Info:  Writing free surface at time 16.
+Sun May 29 13:29:33, Info:  Writing free surface at time 16. Done.
+Sun May 29 13:29:34, Info:  Writing faultoutput at time 16.
+Sun May 29 13:29:43, Info:  Writing faultoutput at time 16. Done.
+Sun May 29 13:29:43, Info:  1.14183 TFLOPS (rank 0: 76.6204 GFLOPS, average over ranks: 71.3641 GFLOPS) 
+Sun May 29 13:43:18, Info:  Waiting for last wave field. 
+Sun May 29 13:43:18, Info:  Writing wave field at time 16.5.
+Sun May 29 13:43:46, Info:  Writing wave field at time 16.5. Done.
+Sun May 29 13:43:46, Info:  Writing free surface at time 16.5.
+Sun May 29 13:43:46, Info:  Writing free surface at time 16.5. Done.
+Sun May 29 13:43:47, Info:  Writing faultoutput at time 16.5.
+Sun May 29 13:43:56, Info:  Writing faultoutput at time 16.5. Done.
+Sun May 29 13:43:56, Info:  1.14197 TFLOPS (rank 0: 76.6303 GFLOPS, average over ranks: 71.3734 GFLOPS) 
+Sun May 29 13:57:31, Info:  Waiting for last wave field. 
+Sun May 29 13:57:31, Info:  Writing wave field at time 17.
+Sun May 29 13:57:59, Info:  Writing wave field at time 17. Done.
+Sun May 29 13:57:59, Info:  Writing free surface at time 17.
+Sun May 29 13:57:59, Info:  Writing free surface at time 17. Done.
+Sun May 29 13:58:00, Info:  Writing faultoutput at time 17.
+Sun May 29 13:58:09, Info:  Writing faultoutput at time 17. Done.
+Sun May 29 13:58:09, Info:  1.14211 TFLOPS (rank 0: 76.6392 GFLOPS, average over ranks: 71.3816 GFLOPS) 
+Sun May 29 14:11:45, Info:  Waiting for last wave field. 
+Sun May 29 14:11:45, Info:  Writing wave field at time 17.5.
+Sun May 29 14:12:13, Info:  Writing wave field at time 17.5. Done.
+Sun May 29 14:12:13, Info:  Writing free surface at time 17.5.
+Sun May 29 14:12:14, Info:  Writing free surface at time 17.5. Done.
+Sun May 29 14:12:14, Info:  Writing faultoutput at time 17.5.
+Sun May 29 14:12:23, Info:  Writing faultoutput at time 17.5. Done.
+Sun May 29 14:12:23, Info:  1.14218 TFLOPS (rank 0: 76.6444 GFLOPS, average over ranks: 71.3865 GFLOPS) 
+Sun May 29 14:25:59, Info:  Waiting for last wave field. 
+Sun May 29 14:25:59, Info:  Writing wave field at time 18.
+Sun May 29 14:26:27, Info:  Writing wave field at time 18. Done.
+Sun May 29 14:26:27, Info:  Writing free surface at time 18.
+Sun May 29 14:26:27, Info:  Writing free surface at time 18. Done.
+Sun May 29 14:26:28, Info:  Writing faultoutput at time 18.
+Sun May 29 14:26:36, Info:  Writing faultoutput at time 18. Done.
+Sun May 29 14:26:36, Info:  1.14229 TFLOPS (rank 0: 76.6515 GFLOPS, average over ranks: 71.393 GFLOPS) 
+Sun May 29 14:40:13, Info:  Waiting for last wave field. 
+Sun May 29 14:40:13, Info:  Writing wave field at time 18.5.
+Sun May 29 14:40:42, Info:  Writing wave field at time 18.5. Done.
+Sun May 29 14:40:42, Info:  Writing free surface at time 18.5.
+Sun May 29 14:40:42, Info:  Writing free surface at time 18.5. Done.
+Sun May 29 14:40:43, Info:  Writing faultoutput at time 18.5.
+Sun May 29 14:40:52, Info:  Writing faultoutput at time 18.5. Done.
+Sun May 29 14:40:52, Info:  1.14233 TFLOPS (rank 0: 76.654 GFLOPS, average over ranks: 71.3954 GFLOPS) 
+Sun May 29 14:54:27, Info:  Waiting for last wave field. 
+Sun May 29 14:54:27, Info:  Writing wave field at time 19.
+Sun May 29 14:54:54, Info:  Writing wave field at time 19. Done.
+Sun May 29 14:54:54, Info:  Writing free surface at time 19.
+Sun May 29 14:54:55, Info:  Writing free surface at time 19. Done.
+Sun May 29 14:54:55, Info:  Writing faultoutput at time 19.
+Sun May 29 14:55:04, Info:  Writing faultoutput at time 19. Done.
+Sun May 29 14:55:04, Info:  1.14246 TFLOPS (rank 0: 76.6628 GFLOPS, average over ranks: 71.4036 GFLOPS) 
+Sun May 29 15:08:40, Info:  Waiting for last wave field. 
+Sun May 29 15:08:40, Info:  Writing wave field at time 19.5.
+Sun May 29 15:09:08, Info:  Writing wave field at time 19.5. Done.
+Sun May 29 15:09:08, Info:  Writing free surface at time 19.5.
+Sun May 29 15:09:09, Info:  Writing free surface at time 19.5. Done.
+Sun May 29 15:09:09, Info:  Writing faultoutput at time 19.5.
+Sun May 29 15:09:18, Info:  Writing faultoutput at time 19.5. Done.
+Sun May 29 15:09:18, Info:  1.14253 TFLOPS (rank 0: 76.6679 GFLOPS, average over ranks: 71.4084 GFLOPS) 
+Sun May 29 15:22:53, Info:  Waiting for last wave field. 
+Sun May 29 15:22:53, Info:  Writing wave field at time 20.
+Sun May 29 15:23:21, Info:  Writing wave field at time 20. Done.
+Sun May 29 15:23:21, Info:  Writing free surface at time 20.
+Sun May 29 15:23:21, Info:  Writing free surface at time 20. Done.
+Sun May 29 15:23:22, Info:  Writing faultoutput at time 20.
+Sun May 29 15:23:31, Info:  Writing faultoutput at time 20. Done.
+Sun May 29 15:23:31, Info:  1.14264 TFLOPS (rank 0: 76.6753 GFLOPS, average over ranks: 71.4153 GFLOPS) 
+Sun May 29 15:23:31, Info:  Ignoring duplicate synchronisation point at time 20 ; the last sync point was at  20 
+Sun May 29 15:23:31, Info:  Ignoring duplicate synchronisation point at time 20 ; the last sync point was at  20 
+Sun May 29 15:23:31, Info:  Ignoring duplicate synchronisation point at time 20 ; the last sync point was at  20 
+Sun May 29 15:23:31, Info:  Ignoring duplicate synchronisation point at time 20 ; the last sync point was at  20 
+Sun May 29 15:23:31, Info:  Elapsed time (via clock_gettime): 34238 seconds. 
+Sun May 29 15:23:31, Info:  Time spent in compute kernels: mean = 28845.6  std = 2638.39  min = 23240.9  median = 29826.8  max = 31404 
+Sun May 29 15:23:31, Info:  Load imbalance: 8.14677 % 
+Sun May 29 15:23:31, Info:  Regression analysis of compute kernels: 
+Sun May 29 15:23:31, Info:  "computeLocalIntegration" ( constant ): 0.00127924 (sample size: 5.35988e+06 , standard error: 3.45261e-11 ) 
+Sun May 29 15:23:31, Info:  "computeLocalIntegration" ( per element ): 6.16385e-07 (sample size: 5.35988e+06 , standard error: 3.45261e-11 ) 
+Sun May 29 15:23:31, Info:  "computeNeighboringIntegration" ( constant ): 0.00420002 (sample size: 5.35988e+06 , standard error: 7.15179e-11 ) 
+Sun May 29 15:23:31, Info:  "computeNeighboringIntegration" ( per element ): 6.63168e-07 (sample size: 5.35988e+06 , standard error: 7.15179e-11 ) 
+Sun May 29 15:23:31, Info:  "computeDynamicRupture" ( constant ): 0.000154028 (sample size: 3.68816e+06 , standard error: 1.28097e-10 ) 
+Sun May 29 15:23:31, Info:  "computeDynamicRupture" ( per element ): 3.04048e-06 (sample size: 3.68816e+06 , standard error: 1.28097e-10 ) 
+Sun May 29 15:23:31, Info:  Total time spent in compute kernels: 461530 
+Sun May 29 15:23:31, Info:  Total   measured HW-GFLOP:  0 
+Sun May 29 15:23:31, Info:  Total calculated HW-GFLOP:  3.91219e+07 
+Sun May 29 15:23:31, Info:  Total calculated NZ-GFLOP:  1.66528e+07 
+Sun May 29 15:23:31, Info:  WP calculated HW-GFLOP:  3.65328e+07 
+Sun May 29 15:23:31, Info:  WP calculated NZ-GFLOP:  1.44203e+07 
+Sun May 29 15:23:31, Info:  DR calculated HW-GFLOP:  2.58909e+06 
+Sun May 29 15:23:31, Info:  DR calculated NZ-GFLOP:  2.23253e+06 
+Sun May 29 15:23:31, Info:  PL calculated HW-GFLOP:  0 
+Sun May 29 15:23:31, Info:  PL calculated NZ-GFLOP:  0 
+Rank:        0 | Info    | total number of performed time steps:            0
+Rank:        0 | Info    | final time of the simulation:    20.0000000000000     
+Rank:        0 | Info    | seismic moment  7.451172662963868E+015 Mw   4.51148308482790     
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start close_SeisSol ...                             >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Sun May 29 15:23:31, Info:  Time wave field writer backend: 1158.35 (min: 1148.58, max: 1170.87)
+Sun May 29 15:23:31, Info:  Time wave field writer frontend: 1160.46 (min: 1150.52, max: 1173.15)
+Sun May 29 15:23:31, Info:  Time fault writer backend: 369.926 (min: 358.344, max: 387.066)
+Sun May 29 15:23:31, Info:  Time fault writer frontend: 369.928 (min: 358.348, max: 387.069)
+Sun May 29 15:23:31, Info:  Time free surface writer backend: 23.3471 (min: 23.2575, max: 23.3723)
+Sun May 29 15:23:31, Info:  Time free surface writer frontend: 16.0517 (min: 0.00038398, max: 23.3728)
+Sun May 29 15:23:31, Info:  SeisSol done. Goodbye. 

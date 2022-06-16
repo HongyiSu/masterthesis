@@ -43,9 +43,6 @@ z = -235000;
 fprintf(fileID2,'%10.6f,%10.6f,%10.6f\n', x, y, z );
 %end
 fclose(fileID2);
-%%
-clear all;
-close all;
-ddd = importdata('receiver5.dat');
+
 
 
