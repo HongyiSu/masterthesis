@@ -1,0 +1,2 @@
+NR.NE208..BH?.M.2017.093.173918.SAC, botswana_model_5a1-receiver-00001-00006.dat
+NR.NE212..BH?.M.2017.093.173918.SAC, botswana_model_5a1-receiver-00002-00007.dat

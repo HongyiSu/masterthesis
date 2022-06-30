@@ -10,8 +10,8 @@ else
     mkdir([pwd '/figure' ])
     disp(['create a new directory: ' pwd '/figure'])
 end
-
-filename = [pwd '/seis_case4b.txt'];
+caseid = "case6a1";
+filename = [strcat(pwd, '/seis_', caseid, '.txt')];
 fileID = fopen(filename);
 C = textscan(fileID,'%s %s','Delimiter',',');
 fclose(fileID);
@@ -52,7 +52,8 @@ for(j=1:length(obs_list))
    end
 end
 %max(syn)/max(obs), k is syn
-saveas(fig,[pwd '/figure/waveform/waveform_case4b_[0.2,0.6]_30.jpg'])
+path = strcat(pwd, '/figure/waveform/waveform_', caseid, '_[', string(m), ',', string(n), ']_.jpg');
+saveas(fig,path)
 
 %%
 close all
@@ -89,8 +90,9 @@ for(j=1:length(obs_list))
     end
 end
 %k is the syn
-saveas(fig1,[pwd '/figure/spectrum/spectrum_case4bi'],'jpg')
 
+path1 = strcat(pwd, '/figure/spectrum/spectrum_', caseid, '.jpg');
+saveas(fig1,path1)
 
 
 

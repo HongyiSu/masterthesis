@@ -21,7 +21,7 @@ function my_plot(obs_t, data_obs_d_f, syn_t, data_syn_d_f,max_obs_t,max_syn_t, s
      
      %scale filtered observational data this factor written on the plot to get filtered synthetic data
      po1 = max(max_obs_t,max_syn_t); %for place the text
-     text(max_obs_t,1,num2str((max(abs(data_syn_d_f))/max(abs(data_obs_d_f)))), 'FontSize', 16);
+     text(max_syn_t,1,num2str((max(abs(data_syn_d_f))/max(abs(data_obs_d_f)))), 'FontSize', 16);
     
 hold on
 

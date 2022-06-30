@@ -1,0 +1,26 @@
+%This script is used to visualize the paraview screenshots of SeisSol output
+close all;
+clear all;
+clc;
+
+list = dir('case_5a1/case_5a_front.*.png');
+list={list.name}';
+%%
+
+
+
+movieid=VideoWriter('case_5a1_front');
+movieid.FrameRate=2;
+movieid.Quality=100;
+open(movieid)
+
+for ilist=1:length(list)
+    A = imread(['case_5a1_front/',list{ilist}]);
+    writeVideo(movieid,A);
+end
+
+close(movieid)
+
+
+
+
