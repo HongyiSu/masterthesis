@@ -1,0 +1,6 @@
+NE208, botswana_model_700kmr6-receiver-00003-00001.dat
+NE212, botswana_model_700kmr6-receiver-00006-00001.dat
+NE213, botswana_model_700kmr6-receiver-00007-00001.dat
+NE216, botswana_model_700kmr6-receiver-00008-00001.dat
+NE217, botswana_model_700kmr6-receiver-00009-00001.dat
+NE219, botswana_model_700kmr6-receiver-00011-00001.dat

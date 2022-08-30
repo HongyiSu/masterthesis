@@ -3,19 +3,17 @@ close all;
 clear all;
 clc;
 
-list = dir('case_6a1/case_6a1.*.png');
+list = dir('700km_r6/model-r6.*');
 list={list.name}';
 %%
 
-
-
-movieid=VideoWriter('case_6a1_front');
+movieid=VideoWriter('model_r6');
 movieid.FrameRate=2;
 movieid.Quality=100;
 open(movieid)
 
 for ilist=1:length(list)
-    A = imread(['case_6a1/',list{ilist}]);
+    A = imread(['700km_r6/',list{ilist}]);
     writeVideo(movieid,A);
 end
 

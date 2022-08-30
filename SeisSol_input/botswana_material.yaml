@@ -1,0 +1,11 @@
+!Any
+  components:
+    - !ASAGI
+      file: botswana_RhoMuLambda.nc
+      parameters: [rho, mu, lambda]
+      var: data
+    - !ConstantMap
+        map:
+         rho: 3330.
+         mu: 65942325000.
+         lambda: 81235350000.

@@ -1,0 +1,680 @@
+<Document xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <name>GMAP Stations</name>
+  <Style id="CC33FF">
+    <IconStyle>
+      <Icon>
+        <href>https://ds.iris.edu/static/img/markers/circle-dot-CC33FF.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="FFFFFF">
+    <IconStyle>
+      <Icon>
+        <href>https://ds.iris.edu/static/img/markers/circle-dot-FFFFFF.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="33CC33">
+    <IconStyle>
+      <Icon>
+        <href>https://ds.iris.edu/static/img/markers/circle-dot-33CC33.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>GT.LBTB - Lobatse, Botswana</name>
+    <styleUrl>#FFFFFF</styleUrl>
+    <Point>
+      <coordinates>25.596598,-25.015124</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>GT LBTB</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Lobatse, Botswana</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>Global Telemetered Seismograph Network(USAF/USGS)&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2011-06-14</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-25.015124&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>25.596598&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE201 - Sekoma</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>23.932789,-24.515341</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE201</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Sekoma</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2013-10-20</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-24.515341&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>23.932789&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE208 - Khwee</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>25.446911,-21.9464</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE208</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Khwee</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2014-02-13</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-21.9464&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>25.446911&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE209 - CKGR</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>23.771767,-21.403549</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE209</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>CKGR</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2015-03-14</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-21.403549&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>23.771767&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE211 - Kacgae</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>22.206787,-22.853821</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE211</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Kacgae</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2013-11-24</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-22.853821&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>22.206787&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE212 - Kaudwane</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>24.660793,-23.38039</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE212</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Kaudwane</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2014-02-15</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-23.38039&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>24.660793&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE213 - Phepheng</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>22.857294,-25.475531</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE213</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Phepheng</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2013-11-23</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-25.475531&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>22.857294&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE216 - Phuduhudu</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>24.537193,-20.195681</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE216</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Phuduhudu</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2014-02-09</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-20.195681&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>24.537193&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE217 - Borolong</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>27.33424,-21.09967</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE217</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Borolong</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2015-08-24</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-21.09967&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>27.33424&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE218 - Sowa</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>26.21785,-20.562851</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE218</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Sowa</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2014-02-10</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-20.562851&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>26.21785&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE219 - Moremi</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>27.446815,-22.56967</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE219</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Moremi</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2015-08-23</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-22.56967&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>27.446815&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>NR.NE220 - Lephepe</name>
+    <styleUrl>#CC33FF</styleUrl>
+    <Point>
+      <coordinates>25.859613,-23.363029</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>NR NE220</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Lephepe</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>NARS Array&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2013-02-22</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2599-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-23.363029&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>25.859613&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>ZT.MARA - Verloren, Limpopo, South Africa</name>
+    <styleUrl>#33CC33</styleUrl>
+    <Point>
+      <coordinates>27.575478,-24.461632</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>ZT MARA</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Verloren, Limpopo, South Africa</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>undefined&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2015-01-01</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2020-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-24.461632&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>27.575478&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>ZT.MRCO - Great Marico, North-West Province, South AFrica</name>
+    <styleUrl>#33CC33</styleUrl>
+    <Point>
+      <coordinates>26.400268,-25.47234</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>ZT MRCO</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Great Marico, North-West Province, South AFrica</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>undefined&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2017-03-29</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2020-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-25.47234&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>26.400268&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>ZT.NHAM - Northam, Limpopo Province, South Africa</name>
+    <styleUrl>#33CC33</styleUrl>
+    <Point>
+      <coordinates>27.31703,-24.91566</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>ZT NHAM</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Northam, Limpopo Province, South Africa</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>undefined&#13;</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2017-03-26</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2020-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-24.91566&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>27.31703&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>ZT.NYAT - Nyati, North-West Province, South Africa</name>
+    <styleUrl>#33CC33</styleUrl>
+    <Point>
+      <coordinates>27.5669,-25.36745</coordinates>
+    </Point>
+    <ExtendedData>
+      <Data>
+        <displayName>SEED Code</displayName>
+        <value>ZT NYAT</value>
+      </Data>
+      <Data>
+        <displayName>Name</displayName>
+        <value>Nyati, North-West Province, South Africa</value>
+      </Data>
+      <Data>
+        <displayName>Description</displayName>
+        <value>undefined</value>
+      </Data>
+      <Data>
+        <displayName>Data Center</displayName>
+        <value>&lt;a href="http://ds.iris.edu"&gt;IRISDMC&lt;/a&gt;</value>
+      </Data>
+      <Data>
+        <displayName>Start Date</displayName>
+        <value>2017-03-30</value>
+      </Data>
+      <Data>
+        <displayName>End Date</displayName>
+        <value>2020-12-31</value>
+      </Data>
+      <Data>
+        <displayName>Latitude</displayName>
+        <value>-25.36745&amp;deg;</value>
+      </Data>
+      <Data>
+        <displayName>Longitude</displayName>
+        <value>27.5669&amp;deg;</value>
+      </Data>
+    </ExtendedData>
+  </Placemark>
+</Document>

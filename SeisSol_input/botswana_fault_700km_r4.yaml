@@ -1,0 +1,13 @@
+!Switch     
+[rs_a]: !ConstantMap
+  map: 
+    rs_a: 0.01 
+[RS_sl0]: !ConstantMap
+  map:
+    RS_sl0: 0.1
+[rs_srW]: !ConstantMap
+  map:
+    rs_srW: 0.1	 
+
+[s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]: !Include botswana_initial_stress_0.95.yaml 
+[nuc_xx,nuc_yy,nuc_zz,nuc_xy, nuc_yz,nuc_xz]: !Include botswana_nucleation_stress_0.37_1.1km.yaml

@@ -1,37 +1,39 @@
 %Hongyi Su, M.Sc. candidate at LMU @ TUM 
 
-function [data_obs data_syn obs_t syn_t fs_obs fs_syn max_syn_t max_obs_t chan station] = fetch_data(j,obs_list, syn_list,channel0)
+function [data_obs data_syn obs_t syn_t fs_obs fs_syn max_syn_t max_obs_t station] = fetch(j,obs_list, syn_list,channel0, station)
 
     %import observational data
-    obs_name = char(obs_list(j));
-    sta_name= obs_name(4:8);
 
+    chan = channel0;
+    obs_name = char(obs_list(j));
+    sta_name= obs_name(1:5);
+    station = sta_name;
     if(channel0=='Z') %0e 1n 2z
         %load ../obs/case2/data-NE208_new_2.mat;
-        load(['../obs/data-' sta_name '_2' '.mat'])
+        load(['../obs/data_60s-' sta_name '_2' '.mat'])
         data_obs =data;
         obs_t = linspace(0,str2num(npts)*str2num(delta),str2num(npts));
         fs_obs  = str2num(sampling_rate);
         max_obs_t = max(obs_t);
-        chan = channel;
+        %chan = channel;
         station =  sta_name;
     end
     if(channel0=='E') %0e 1n 2z
-        load(['../obs/data-' sta_name '_0' '.mat'])
+        load(['../obs/data_60s-' sta_name '_0' '.mat'])
         data_obs =data;
         obs_t = linspace(0,str2num(npts)*str2num(delta),str2num(npts));
         fs_obs  = str2num(sampling_rate);
         max_obs_t = max(obs_t);
-        chan = channel;
+        %chan = channel;
         station =  sta_name;
      end
      if(channel0=='N') %0e 1n 2z
-        load(['../obs/data-' sta_name '_1' '.mat'])
+        load(['../obs/data_60s-' sta_name '_1' '.mat'])
         data_obs =data;
         obs_t = linspace(0,str2num(npts)*str2num(delta),str2num(npts));
         fs_obs  = str2num(sampling_rate);
         max_obs_t = max(obs_t);
-        chan = channel;
+        %chan = channel;
         station =  sta_name;
     end
     
@@ -62,7 +64,7 @@ function [data_obs data_syn obs_t syn_t fs_obs fs_syn max_syn_t max_obs_t chan s
     %import synthetic data (SeisSol FORMAT)
     % VARIABLES = "Time","xx","yy","zz","xy","yz","xz","u","v","w"
     fid  = fopen(['/Users/hongyisu/Desktop/masterthesis/seismogram/syn/' char(syn_list(j))]);
-    data = textscan(fid,'%f%f%f%f%f%f%f%f%f%f','Delimiter','\t','HeaderLines',5);
+    data = textscan(fid,'%f%f%f%f%f%f%f%f%f%f','Delimiter','\t','HeaderLines',8);
     fid = fclose(fid);
     syn_t=cell2mat(data(1,1));
     % syn_t=syn_t(1:2000);

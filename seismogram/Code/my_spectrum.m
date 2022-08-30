@@ -9,32 +9,45 @@ function my_spectrum(data_syn_d_f,data_obs_d_f, station, chan,fs_syn,fs_obs,j,k)
      F_obs=fft(data_obs_d_f);
      A_obs=abs(F_obs(1:ns_obs/2+1));
 
-
      loglog(f_obs,A_obs, 'r');
-    % ylim([10^-8 10^2]);
 
+    % ylim([10^-8 10^2]);
     hold on
 
     loglog(f_syn,A_syn, 'k');
     %ylim([10^-14 10^-6])
+    
     xlim([0 10^2])
     
-    if(j==2)
-        %xticks([10^-4 10^-2 10^-1 10^0 10^1]);
+    if(j==7)
+        xticks([10^-4 10^-2 10^-1 10^0 10^1 10^2]);
         xlabel('Frequency[Hz]','FontSize', 16,'Fontweight','bold');
+        %a = get(gca,'XTickLabel');  
+        %set(gca,'XTickLabel',a,'fontsize',18,'FontWeight','bold')
+        %set(gca,'XTickLabelMode','auto');
+        a = get(gca,'XTickLabel');  
+        set(gca,'XTickLabel',a,'fontsize',12,'FontWeight','bold')
+        set(gca,'XTickLabelMode','auto');
     elseif(j==1)
-        title(chan,'FontSize', 20,'fontweight','bold')
+        title(strcat("BH",chan),'FontSize', 12,'fontweight','bold')
         set(gca,'Xticklabel',[])
     else
         set(gca,'Xticklabel',[])
     end
+
     if(k==1)
-        %yticks([10^-8 10^-6 10^-4 10^-2 10^0 10^2 10^4 10^6 10^8]);
-        ylabel(station,'FontSize', 16,'fontweight','bold')
+        ylim([10^-6, 10^1])
+        yticks([10^-6 10^-4 10^-2 10^0]);
+        ylabel(station,'FontSize', 20,'fontweight','bold')
+        
+        a = get(gca,'YTickLabel');  
+        set(gca,'YTickLabel',a,'fontsize',12,'FontWeight','bold')
+        set(gca,'YTickLabelMode','auto');
     else
         yticks([]);
         set(gca,'YColor','none')
     end
+
     set(gca,'box','off')
     set(gcf,'color','w');
     grid on
