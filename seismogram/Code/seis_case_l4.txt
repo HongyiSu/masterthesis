@@ -1,0 +1,7 @@
+NE208, botswana_model_5_l4_60s-receiver-00003-00010.dat
+NE211, botswana_model_5_l4_60s-receiver-00005-00010.dat
+NE212, botswana_model_5_l4_60s-receiver-00006-00010.dat
+NE213, botswana_model_5_l4_60s-receiver-00007-00010.dat
+NE216, botswana_model_5_l4_60s-receiver-00008-00010.dat
+NE217, botswana_model_5_l4_60s-receiver-00009-00010.dat
+NE219, botswana_model_5_l4_60s-receiver-00011-00010.dat

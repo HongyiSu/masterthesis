@@ -1,0 +1,2 @@
+NE208, botswana_model_5ref-receiver-00001-00002.dat
+NE212, botswana_model_5ref-receiver-00002-00002.dat

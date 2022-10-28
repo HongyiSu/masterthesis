@@ -1,0 +1,35 @@
+These data are not filtered!
+
+st2 has been downloaded (accidently)
+
+
+net = "NR"
+#sta = "NE208"
+
+List = ["NE208","NE211", "NE212", "NE213", "NE216","NE217","NE219"]
+for sta in List:
+    st = client.get_waveforms(net, sta, "*", "BH*", t, t+60, attach_response=True)
+    st.remove_response(output="VEL")
+    #st.plot();
+#Download station response
+    inv = client.get_stations(network=net, station=sta, location="", channel="BH?", starttime=t, endtime=t+60, level="response")
+#Plot trace after removed instrument response
+    st1 = st.copy()
+    st1.remove_response(inventory=inv)
+#st1.plot();
+    st2=st1.copy()
+    st2.detrend()
+    st3=st2.copy()
+#st3.taper(type="cosine", max_percentage=0.05).filter("bandpass", freqmin=0.2, freqmax=0.6, corners=4)
+    st3.filter("bandpass", freqmin=0.2, freqmax=0.6, corners=4)
+    st3.plot();
+#save data in mat format
+#BHZ - 0
+#BHN - 1
+#BHE - 2
+
+    for i, tr in enumerate(st2):
+        mdict = {k: str(v) for k, v in tr.stats.items()}
+        mdict['data'] = tr.data
+        savemat("data_60s_detrend-" + str(sta) + "_" + str(i) +"vel.mat", mdict)
+         

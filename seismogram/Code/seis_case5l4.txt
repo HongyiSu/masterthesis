@@ -1,0 +1,2 @@
+NE208, botswana_model_5_l4-receiver-00001-00013.dat
+NE212, botswana_model_5_l4-receiver-00002-00013.dat
