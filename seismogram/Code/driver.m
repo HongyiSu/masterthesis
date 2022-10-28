@@ -11,6 +11,7 @@ else
     disp(['create a new directory: ' pwd '/figure'])
 end
 caseid = "case5r6_60s";
+%caseid = "case5r6_60s";
 filename = [strcat(pwd, '/seis_', caseid, '.txt')];
 fileID = fopen(filename);
 C = textscan(fileID,'%s %s','Delimiter',',');
@@ -30,9 +31,9 @@ end
 %plotting
 fig = figure;
 fig.Units = 'centimeters';
-fig.Position = [0 0 20 40];%define size of the figure
+fig.Position = [0 0 30 60];%define size of the figure
 channel_3 = ["E", "N", "Z"];
-count =0;
+count=0;
 row_len =length(obs_list);
 for(j=1:length(obs_list))
    for(k=1:length(channel_3))
@@ -49,7 +50,7 @@ for(j=1:length(obs_list))
    end
 end
 %max(syn)/max(obs), k is syn
-path = strcat(pwd, '/figure/waveform/waveform_60s_', caseid, '_[', string(m), ',', string(n), ']_.jpg');
+path = strcat(pwd, '/figure/waveform_new/waveform_Model-R6_', '_[', string(m), ',', string(n), ']', '.jpg');
 saveas(fig,path)
 
 %%
@@ -80,6 +81,6 @@ for(j=1:length(obs_list))
 end
 %k is the syn
 
-path1 = strcat(pwd, '/figure/spectrum/spectrum_60s_', caseid, '.jpg');
+path1 = strcat(pwd, '/figure/spectrum_new/spectrum_60s_model-l4-r6', caseid, '.jpg');
 saveas(fig1,path1)
 
